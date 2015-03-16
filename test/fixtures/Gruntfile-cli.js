@@ -12,5 +12,11 @@ module.exports = function(grunt) {
       obj[this.name] = grunt.option(this.name);
     });
   });
+  
+  // Store the value of the `name` option to be output via
+  // the "finalize" task.
+  grunt.registerTask('print-option', function(name){
+    obj[name] = grunt.option(name);
+  });
 
 };

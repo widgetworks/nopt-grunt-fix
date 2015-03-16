@@ -1,5 +1,8 @@
 module.exports = function(grunt) {
-
+  
+  // Reparse the options:
+  require('../../index.js')(grunt);
+  
   var obj = {};
   grunt.registerTask('finalize', 'Print all option values.', function() {
     console.log('###' + JSON.stringify(obj) + '###');
@@ -11,6 +14,12 @@ module.exports = function(grunt) {
     grunt.registerTask(name, 'Store the current "' + name + '" option value.', function() {
       obj[this.name] = grunt.option(this.name);
     });
+  });
+  
+  // Store the value of the `name` option to be output via
+  // the "finalize" task.
+  grunt.registerTask('print-option', function(name){
+    obj[name] = grunt.option(name);
   });
 
 };

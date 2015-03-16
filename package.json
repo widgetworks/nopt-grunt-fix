@@ -1,0 +1,33 @@
+{
+  "name": "nopt-grunt-fix",
+  "version": "1.0.0",
+  "description": "Fix arguments parsing for Grunt ~0.4.x",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/widgetworks/nopt-grunt-fix.git"
+  },
+  "keywords": [
+    "grunt",
+    "nopt",
+    "arguments",
+    "options",
+    "parsing"
+  ],
+  "author": "Widget Works",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/widgetworks/nopt-grunt-fix/issues"
+  },
+  "homepage": "https://github.com/widgetworks/nopt-grunt-fix",
+  "dependencies": {
+    "nopt": "^3.0.1"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-nodeunit": "^0.4.1"
+  }
+}
